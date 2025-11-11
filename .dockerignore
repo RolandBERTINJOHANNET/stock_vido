@@ -1,0 +1,21 @@
+# VCS / editor
+.git
+*.log
+.DS_Store
+
+# Python cache
+__pycache__/
+**/__pycache__/**
+*.pyc
+
+# Local artifacts we don't need in the image
+files/
+stock_clips/
+tryout_out/
+*.mp4
+*.mp3
+*.json
+
+# Local envs
+.env
+.env.*

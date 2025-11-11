@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+requests
+supabase>=2,<3
+python-dotenv
+pydub
+mutagen
+openai
+elevenlabs
+# optional helpers if you decide to use them:
+tenacity
+tqdm

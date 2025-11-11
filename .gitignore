@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+/files/
+/tryout_out/
+*.mp4
+*.mp3
+*.json
+
+.DS_Store
+.pytest_cache/
