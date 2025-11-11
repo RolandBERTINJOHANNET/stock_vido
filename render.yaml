@@ -1,0 +1,29 @@
+services:
+  - type: web
+    name: stock-vido
+    env: docker
+    plan: free
+    autoDeploy: false
+    healthCheckPath: /health
+    dockerfilePath: infra/Dockerfile
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: ELEVEN_API_KEY
+        sync: false
+      - key: PIXABAY_KEY
+        sync: false
+      - key: KIE_API_KEY
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: SUPABASE_BUCKET
+        value: outputs
+      - key: REQUIRE_SUPABASE
+        value: "true"
+      - key: APP_API_KEY
+        value: dev123
+      - key: ALLOWED_ORIGINS
+        value: https://*.lovable.dev,https://yourapp.lovable.dev
